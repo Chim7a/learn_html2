@@ -9,6 +9,9 @@
       margin: 0;
       padding: 0;
     }
+    header {
+      background-color: rgb(33, 33, 78);
+    }
     ul {
       display: flex;
       flex-direction: row;
@@ -19,12 +22,23 @@
       list-style: none;
       cursor: pointer;
       font-size: 1.2rem;
+      color: bisque;
     }
-    li:hover {
-      background-color: blue;
-      border-radius: 1rem;
-      padding: 1.5rem;
+
+    /* Form styling */
+
+    form {
+      display: flex;
+      flex-direction: column;
     }
+    input,
+    textarea {
+      width: 50%;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer styling */
     footer {
       display: flex;
       flex-direction: column;
@@ -40,7 +54,7 @@
       <nav>
         <ul>
           <li><a href="#"></a>Home</li>
-          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>About me</li>
           <li><a href="#"></a>Work</li>
           <li><a href="#"></a>Resume</li>
           <li><a href="#"></a>Contact</li>
@@ -50,7 +64,42 @@
 
     <!-- Main -->
 
+    <section>
+      <h1>About me</h1>
+      <i
+        >A highly motivated, self-driven and passionate frontend web developer.
+        Strong knowledge in creating solutions to complex problems while
+        developing innovative projects with simplicity.
+      </i>
+    </section>
+
+    <section>
+      <h1>My Work</h1>
+      <p>
+        A video shot and edited by me to celebrate
+        <i>International women's day</i>
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/S8esbbcNkjI?si=F-FW7o4UAuY6SPoN"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section>
+      <h1>Resume</h1>
+      <a href="https://chimaike-f873f.web.app/#contacts" target="_blank"
+        >Please Click here for Resume</a
+      >
+    </section>
+
     <form>
+      <h1>Contact Us</h1>
       <label for="name">Name</label>
       <input id="name" type="text" placeholder="Please write name here." />
       <label for="phone">Phone number</label>
