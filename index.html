@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+    li {
+      list-style: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+    li:hover {
+      background-color: blue;
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      background-color: rgb(33, 33, 78);
+      color: beige;
+    }
+  </style>
+  <body>
+    <!-- Navigation Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>Work</li>
+          <li><a href="#"></a>Resume</li>
+          <li><a href="#"></a>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+
+    <form>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Please write name here." />
+      <label for="phone">Phone number</label>
+      <input id="phone" type="text" placeholder="Please write number here." />
+
+      <textarea
+        placeholder="Please leave a message"
+        name="message"
+        id="message"
+      ></textarea>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <h1>My Portfolio</h1>
+      <p>© Developed by Chim7a</p>
+    </footer>
+  </body>
+</html>
