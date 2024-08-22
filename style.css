@@ -1,18 +1,28 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+img,
+iframe {
+  max-width: 100%;
+}
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
+
+/* Navigation styling */
 header {
   background-color: rgb(33, 33, 78);
+  border-radius: 1px;
 }
 .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 1rem;
+  padding: 1em;
 }
 li {
   list-style: none;
@@ -24,7 +34,53 @@ li {
 
 .about_sec {
   text-align: center;
-  margin: 4rem 0.5rem;
+  margin: 2em 0;
+}
+
+.about_sec h1 {
+  padding-bottom: 0.5em;
+}
+
+/* Work styling */
+
+.work_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: rgb(33, 33, 78);
+  color: bisque;
+  max-width: 100%;
+}
+
+.work_sec p,
+.work_sec h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.work_sec p {
+  padding: 0.5em;
+}
+
+.work_sec iframe {
+  padding-top: 1rem;
+}
+/* Resume stylying */
+.resume_sec {
+  text-align: center;
+  padding: 2em 0;
+  background-color: rgba(255, 228, 196, 0.633);
+}
+.resume_sec h1 {
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+.resume_sec a {
+  text-decoration: none;
+  font-weight: 400;
+  color: red;
 }
 
 /* Form styling */
@@ -32,20 +88,49 @@ li {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  font-weight: 400;
+  font-size: 1rem;
+}
+form label {
+  text-align: start;
+}
+.input_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_container input {
+  padding: 1em;
+  max-width: 100%;
+}
+label {
+  padding: 0.2em 0;
 }
 input,
 textarea {
-  width: 50%;
-  padding: 1rem 0;
+  padding: 2rem;
   margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5em 1.5em;
+  border-radius: 8px;
 }
 
 /* Footer styling */
 footer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   align-items: center;
   background-color: rgb(33, 33, 78);
   color: beige;
+  padding: 2rem 0;
+  margin-bottom: 0;
+}
+
+footer p {
+  margin: 1rem;
 }

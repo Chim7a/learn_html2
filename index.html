@@ -29,14 +29,16 @@
 
     <section class="about_sec">
       <h1>About me</h1>
-      <i
-        >A highly motivated, self-driven and passionate frontend web developer.
-        Strong knowledge in creating solutions to complex problems while
-        developing innovative projects with simplicity.
-      </i>
+      <p>
+        <i
+          >A highly motivated, self-driven and passionate frontend web
+          developer. Strong knowledge in creating solutions to complex problems
+          while developing innovative projects with simplicity.
+        </i>
+      </p>
     </section>
 
-    <section>
+    <section class="work_sec">
       <h1>My Work</h1>
       <p>
         A video shot and edited by me to celebrate
@@ -54,7 +56,7 @@
       ></iframe>
     </section>
 
-    <section>
+    <section class="resume_sec">
       <h1>Resume</h1>
       <a href="https://chimaike-f873f.web.app/#contacts" target="_blank"
         >Please Click here for Resume</a
@@ -63,16 +65,21 @@
 
     <form>
       <h1>Contact Us</h1>
-      <label for="name">Name</label>
-      <input id="name" type="text" placeholder="Please write name here." />
-      <label for="phone">Phone number</label>
-      <input id="phone" type="text" placeholder="Please write number here." />
+      <div class="input_container">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Please write name here." />
+      </div>
+      <div class="input_container">
+        <label for="phone">Phone number</label>
+        <input id="phone" type="text" placeholder="Please write number here." />
+      </div>
 
       <textarea
         placeholder="Please leave a message"
         name="message"
         id="message"
       ></textarea>
+      <button>Submit</button>
     </form>
 
     <!-- Footer -->
